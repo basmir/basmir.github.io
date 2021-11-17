@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dostavka</title>
+    <link rel="shortcut icon" href="icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <section id="up" class="promo">
+        <div class="container">
+            <header class="header">
+                <a href="#" class="header__logo">
+                    <img src="icons/logo.png" alt="logo">
+                </a>
+                <div class="header__official">
+                    Вам захотелось покушать?
+                    <span>Значит вы правильно зашли!</span>
+                </div>
+                <div class="header__contacts">
+                    <a href="tel:+79514877469" class="header__phone">+7 (951) 487-74-69</a>
+                    <button data-modal="consultation" class="button">заказать доставку</button>
+                </div>
+            </header>
+
+            <div class="promo__wrapper">
+                <h1 class="promo__header">Tasty Food</h1>
+                <h2 class="promo__subheader">Всегда рады накормить вас</h2>
+
+                <div class="promo__icons">
+                    <div class="promo__icon">
+                        <img src="icons/main_screen/timer.png" alt="timer">
+                        Время готовки:
+                        10 минут
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/main_screen/hand-cart.png" alt="hand-cart">
+                        Бесплатная
+                        доставка
+                    </div>
+                    <div class="promo__icon">
+                        <img src="icons/main_screen/messages.png" alt="messages">
+                        Вежливый персонал
+                    </div>
+                </div>
+
+               
+                <div class="promo__link">
+                    или
+                    <a href="#catalog_1">ПЕРЕЙТИ В МЕНЮ</a>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
+            <div class="advantages__wrapper">
+                <div class="advantages__item">
+                    <img src="icons/advantages/cup.png" alt="cup" class="advantages__icon">
+                    <div class="advantages__subtitle">
+                        Опытные повара
+                    </div>
+                    <div class="advantages__descr">
+                        Наши повара самые знаменитые повара в России! <br> Они прошли все этапы проверки и сертификации. Вы можете быть уверены, что вас вкусно и качественно покормят.
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
+                    <div class="advantages__subtitle">
+                        Заботимся о здоровье
+                    </div>
+                    <div class="advantages__descr">
+                        Мы работаем для того, 
+                        чтобы ваше здоровье было наполнено полезными витаминами! У нас всегда блюда готовятся из свежих продуктов.   
+                    </div>
+                </div>
+                <div class="advantages__item">
+                    <img src="icons/advantages/shoe.png" alt="shoe" class="advantages__icon">
+                    <div class="advantages__subtitle">
+                        Нас выбирают 
+                    </div>
+                    <div class="advantages__descr">
+                        К нам ежедневно заходят перекусить 1000 человек!
+                        Не верите? Приходите и сами убедитесь.
+                        Закажите столик прямо сейчас
+                        <a href="#">Бронировать.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="consultation">
+        <div class="container">
+            <h2 class="title title_left">
+                Получайте скидки на все блюда<br>
+            </h2>
+            <div class="consultation__descr">
+                Просто зарегистрируйтесь на нашем сайте<br> 
+                и мы перезвоним вам в течении 10 минут
+            </div>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон"> 
+                <input name="email" required placeholder="Ваш E-mail" type="email"> 
+
+                <button class="button button_submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slide_1.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_2.jpg" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slide_3.jpg" alt="slide">
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <div id="map"></div>
+    <section class="catalog_1" id="catalog_1">
+        
+            <h2 class="title">МЕНЮ</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab catalog__tab_active"><a href="#catalog_1"><div>Салаты</div></li></a>
+                <li class="catalog__tab"><a href="#catalog_2"><div>Закуски</div></li></a>
+                <li class="catalog__tab"><a href="#catalog_3"><div>Вторые блюда</div></li></a>
+            </ul>
+            <div class="container">
+            <div class="catalog__content catalog__content_active">
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/salat1.png" alt="salat1" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Салат с тунцом и огурцом</div>
+                            <div class="catalog-item__descr">Необычное и вкусное сочетание кукурузы и соленых огурчиков.</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list ">
+                            <li>250гр кукурузы;
+                            </li>
+                            <li>
+                            2 яйца;
+                            </li>
+                            <li>
+                            100гр соленых огурцов;</li>
+                            <li>
+                            80гр лолобионда
+                            </li>
+                            <li>
+                            150гр консервы;
+                           </li>
+                            <li>
+                            укроп и луковица;</li>
+                            <li>
+                            перец и соль
+                            </li>
+                            <li>
+                            150гр помидора
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+                    
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">990 руб.</div>
+                            <div class="catalog-item__price">641 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/salat2.jpg" alt="salat2" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Греческий салат</div>
+                            <div class="catalog-item__descr">Абсолютно новый вкус греческого <br> салата.
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Помидор — 1 шт.
+                            </li>
+                            <li>
+                                Сладкий перец — 1 шт.
+                            </li>
+                            <li>
+                                Лук — 1 шт.
+                            </li>
+                            <li>
+                                Сыр Фета — 80 грамм
+                            </li>
+                            <li>
+                                 Оливковое масло, соль, перец по вкусу
+                            </li>
+                            <li>
+                                Чеснок — несколько зубчиков
+                            </li>
+                            <li>
+                                Яблочный уксус по вкусу
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">590 руб.</div>
+                            <div class="catalog-item__price">521 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/salat3.jpg" alt="salat" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Цезарь</div>
+                            <div class="catalog-item__descr">Всеми любимый салат "Цезарь". <br> Весь вкус - в оригинальном соусе</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li> куриное филе 400 г                            </li>
+                            <li>салат Айсберг 1 кочан                            </li>
+                            <li>помидоры черри 200 г                            </li>
+                            <li>сыр пармезан 100 г                            </li>
+                            <li>хлеб белый 1/2 буханки                            </li>
+                            <li>чеснок 2 зубчика                            </li>
+                            <li>оливковое масло 3 ст. ложки                            </li>
+                            <li>соль и перец по вкусу                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">750 руб.</div>
+                            <div class="catalog-item__price">500 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/salat4.jpg" alt="salat" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Испанский салат</div>
+                            <div class="catalog-item__descr">Блюдо понравится всем любителям правильного питания.</div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>Тунец  — 80 Грамм (в масле)</li>
+                            <li>Листья салата  — 30 Грамм                            </li>
+                            <li>Помидоры черри  — 60 Грамм
+                            </li>
+                            <li>Огурцы  — 70 Грамм (свежие)
+                            </li>
+                            <li>Кукуруза  — 60 Грамм (консервированная)
+                            </li>
+                            <li>Куриные яйца  — 1 Штука
+                            </li>
+                            <li>Масло оливковое  — 2 Ст. ложки
+                            </li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">990 руб.</div>
+                            <div class="catalog-item__price">641 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/salat5.jpg" alt="salat" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Теплый салат</div>
+                            <div class="catalog-item__descr">Отлично пойдет как сытный гарнир<br> или как основное блюдо.
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li> Макароны 250гр
+                            </li>
+                            <li>Стручковая фасоль 1 горсть
+                            </li>
+                            <li> Помидоры черри 250гр
+                            </li>
+                            <li>Перец болгарский 2шт
+                            </li>
+                            <li>Сыр чеддер 50гр</li>
+                            <li>Чеснок 3 зубчика</li>
+                            <li>Сметана 3ст ложки</li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">750 руб.</div>
+                            <div class="catalog-item__price">500 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="img/salat6.jpg" alt="salat" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Салат с гребешками</div>
+                            <div class="catalog-item__descr">Для любителей гребешка <br> и закусывания вина
+                            </div>
+                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>салат айсберг 75 г
+                            </li>
+                            <li>гребешки 125 г
+                            </li>
+                            <li>помидоры черри 50 г
+                            </li>
+                            <li>сыр моцарелла 50 г
+                            </li>
+                            <li>уксус бальзамический 1 ст.л.
+                            </li>
+                            <li> оливковое масло и соус табаска по 2гр
+                            </li>
+                            <li>чеснок 1 зуб.</li>
+                            <a href="#" class="catalog-item__back">назад</a>
+                        </ul>
+                    </div>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">660 руб.</div>
+                            <div class="catalog-item__price">551 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+    <section class="catalog_2" id="catalog_2">
+        
+        
+        <ul class="catalog__tabs">
+            <li class="catalog__tab catalog__tab_active"> <a href="#catalog_1"><div>Салаты</div></li></a>
+            <li class="catalog__tab"><a href="#catalog_2"><div>закуски</div></li></a>
+            <li class="catalog__tab"><a href="#catalog_3"><div>вторые блюда</div></li></a>
+        </ul>
+
+        <div class="catalog__content catalog__content_active">
+            <div class="catalog-item">
+                <div class="catalog-item__wrapper">
+                    <div class="catalog-item__content catalog-item__content_active">
+                        <img src="img/rybnoe.jpg" alt="salat" class="catalog-item__img">
+                        <div class="catalog-item__subtitle">Рыбное ассорти
+                        </div>
+                        <div class="catalog-item__descr">Свежо нарезанные рыбы вас ждут, <br> чтобы вы накорились ими</div>
+                        <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <ul class="catalog-item__list ">
+                        <li>250 гр Лосось
+                        </li>
+                        <li>
+                        100 гр красной икры
+                        </li>
+                        <li>
+                        300гр Форель</li>
+                        <li>
+                        100гр осетрина
+                        </li>
+                        <li>
+                        100гр угорь</li>
+                        <li>
+                        лимон
+                        </li>
+                        <a href="#" class="catalog-item__back">назад</a>
+                    </ul>
+                </div>
+                <hr>
+                
+                <div class="catalog-item__footer">
+                    <div class="catalog-item__prices">
+                        <div class="catalog-item__old-price">990 руб.</div>
+                        <div class="catalog-item__price">701 руб.</div>
+                    </div>
+                    <button class="button button_mini">КУПИТЬ</button>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item__wrapper">
+                    <div class="catalog-item__content catalog-item__content_active">
+                        <img src="img/syrnoe.jpg" alt="salat" class="catalog-item__img">
+                        <div class="catalog-item__subtitle">Сырное ассорти</div>
+                        <div class="catalog-item__descr">Шесть видов сыров, подобранные в верной последовательности.
+                        </div>
+                        <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <ul class="catalog-item__list">
+                        <li>
+                            125гр Качотта из коровьего молока
+                        </li>
+                        <li>
+                            125гр Качотта из козьего молока
+                        </li>
+                        <li>
+                            125гр Твердый сыр Тет де Муан
+                       </li>
+                        <li>
+                            125гр Экстра-твердый сыр Пармезан Швейцарский
+                        </li>
+                        <li>
+                            125гр Сыр с белой плесенью Камамбер
+                        </li>
+                        <li>
+                            Голубой сыр Грандблю Creamy
+                        </li>
+
+                        <a href="#" class="catalog-item__back">назад</a>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="catalog-item__footer">
+                    <div class="catalog-item__prices">
+                        <div class="catalog-item__old-price">1390 руб.</div>
+                        <div class="catalog-item__price">900 руб.</div>
+                    </div>
+                    <button class="button button_mini">КУПИТЬ</button>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item__wrapper">
+                    <div class="catalog-item__content catalog-item__content_active">
+                        <img src="img/raznosol.jpg" alt="salat" class="catalog-item__img">
+                        <div class="catalog-item__subtitle">Разносол</div>
+                        <div class="catalog-item__descr">Ассорти солений мы советуем употреблять вместе с нашим </div>
+                        <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <ul class="catalog-item__list">
+                        <li>
+                            150гр баклажан соленый
+                        </li>
+                        <li>
+                            100гр перец острый
+                        </li>
+                        <li>
+                            150гр гурийская капуста
+                       </li>
+                        <li>
+                            150гр помидоры соленые
+                        </li>
+                        <li>
+                            150гр огурцы соленые
+                        </li>
+                        <li>
+                            50гр алыча
+                        </li>
+                        <li>
+                            50гр чеснок
+                       </li>
+                        <a href="#" class="catalog-item__back">назад</a>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="catalog-item__footer">
+                    <div class="catalog-item__prices">
+                        <div class="catalog-item__old-price">750 руб.</div>
+                        <div class="catalog-item__price">500 руб.</div>
+                    </div>
+                    <button class="button button_mini">КУПИТЬ</button>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item__wrapper">
+                    <div class="catalog-item__content catalog-item__content_active">
+                        <img src="img/kolca.jpg" alt="salat" class="catalog-item__img">
+                        <div class="catalog-item__subtitle">Кольца кальмара</div>
+                        <div class="catalog-item__descr">Вы обязательно должны попробовать<br> наши кольца кальмара</div>
+                        <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <ul class="catalog-item__list">
+                        <li>300гр кальмар
+                        </li>
+                        <li>
+                        80гр мука темпура
+                        </li>
+                        <li>
+                        20мл масло оливковое</li>
+                        <li>
+                       50гр лук фри
+                        </li>
+                        <li>
+                            долька лимона
+                        </li>
+                        <a href="#" class="catalog-item__back">назад</a>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="catalog-item__footer">
+                    <div class="catalog-item__prices">
+                        <div class="catalog-item__old-price">490 руб.</div>
+                        <div class="catalog-item__price">341 руб.</div>
+                    </div>
+                    <button class="button button_mini">КУПИТЬ</button>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item__wrapper">
+                    <div class="catalog-item__content catalog-item__content_active">
+                        <img src="img/syrnye.jpg" alt="salat" class="catalog-item__img">
+                        <div class="catalog-item__subtitle">Сырные палочки</div>
+                        <div class="catalog-item__descr">Наши сырные палочки-волшебные палочки
+                        </div>
+                        <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <ul class="catalog-item__list">
+                        <li>200гр сыр гауда
+                        </li>
+                        <li>
+                        80гр мука темпура
+                        </li>
+                        <li>
+                        40гр масло фритюрное</li>
+                        <li>
+                        40мл соус кисло-сладкий
+                        </li>
+                        <a href="#" class="catalog-item__back">назад</a>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="catalog-item__footer">
+                    <div class="catalog-item__prices">
+                        <div class="catalog-item__old-price">450 руб.</div>
+                        <div class="catalog-item__price">300 руб.</div>
+                    </div>
+                    <button class="button button_mini">КУПИТЬ</button>
+                </div>
+            </div>
+            <div class="catalog-item">
+                <div class="catalog-item__wrapper">
+                    <div class="catalog-item__content catalog-item__content_active">
+                        <img src="img/susi.png" alt="salat" class="catalog-item__img">
+                        <div class="catalog-item__subtitle">Наши суши</div>
+                        <div class="catalog-item__descr">Идеальный вкус японской кухни<br> только у нас
+                        </div>
+                        <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    </div>
+                    <ul class="catalog-item__list">
+                        <li>25гр Лосось
+                        </li>
+                        <li>25гр угорь
+                        </li>
+                        <li>
+                        200гр риса
+                        </li>
+                        <li>
+                        50гр японский сыр </li>
+                        <li>
+                            20гр огурцы
+                        </li>
+                        <li>5гр кунжут
+                        </li>
+                        <li>20гр васаби, имбирь и соевый
+                        </li>
+                        <a href="#" class="catalog-item__back">назад</a>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="catalog-item__footer">
+                    <div class="catalog-item__prices">
+                        <div class="catalog-item__old-price">490 руб.</div>
+                        <div class="catalog-item__price">321 руб.</div>
+                    </div>
+                    <button class="button button_mini">КУПИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <div class="container">
+    <section class="catalog_3" id="catalog_3">   
+    <ul class="catalog__tabs">
+        <li class="catalog__tab catalog__tab_active"><a href="#catalog_1"><div>Салаты</div></li></a>
+        <li class="catalog__tab"><a href="#catalog_2"><div>Закуски</div></li></a>
+        <li class="catalog__tab"><a href="#catalog_3"><div>Вторые блюда</div></li></a>
+    </ul>
+
+    <div class="catalog__content catalog__content_active">
+        <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+                <div class="catalog-item__content catalog-item__content_active">
+                    <img src="img/kazan.jpg" alt="salat" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Казан кебаб</div>
+                    <div class="catalog-item__descr">Горячий прямо из казана бараний <br> кебаб спешит к вам</div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                </div>
+                <ul class="catalog-item__list ">
+                    <li>500гр корейка баранины
+                    </li>
+                    <li>
+                        250гр картофель
+                    </li>
+                    <li>
+                    100гр салат айсберг</li>
+                    <li>
+                   150гр сладкий перец
+                    </li>
+                    <li>
+                        50гр лук
+                    </li>
+                    <li>
+                        50гр помидоры
+                    </li>
+                    <a href="#" class="catalog-item__back">назад</a>
+                </ul>
+            </div>
+            <hr>
+            
+            <div class="catalog-item__footer">
+                <div class="catalog-item__prices">
+                    <div class="catalog-item__old-price">6990 руб.</div>
+                    <div class="catalog-item__price">541 руб.</div>
+                </div>
+                <button class="button button_mini">КУПИТЬ</button>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+                <div class="catalog-item__content catalog-item__content_active">
+                    <img src="img/uygur.jpg" alt="salat" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Уйгурский лагман</div>
+                    <div class="catalog-item__descr">Король всех видов лагмана <br> без спора уйгурский
+                    </div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                </div>
+                <ul class="catalog-item__list">
+                    <li>200гр мясо
+                    </li>
+                    <li>100гр лук         
+                    </li>
+                    <li>100гр помидора
+                   </li>
+                    <li>100гр пекинская капуста
+                    </li>
+                    <li>100гр сладкого перца
+                    </li>
+                     <li>фасоль, чеснок и томат
+                     </li>
+                     <li>
+                         125гр тесто лагмана
+                     </li>
+                    <a href="#" class="catalog-item__back">назад</a>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="catalog-item__footer">
+                <div class="catalog-item__prices">
+                    <div class="catalog-item__old-price">490 руб.</div>
+                    <div class="catalog-item__price">400 руб.</div>
+                </div>
+                <button class="button button_mini">КУПИТЬ</button>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+                <div class="catalog-item__content catalog-item__content_active">
+                    <img src="img/plov.jpg" alt="salat" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Плов узбекский</div>
+                    <div class="catalog-item__descr">Наш плов вам даст атмосферу Узбекистана</div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                </div>
+                <ul class="catalog-item__list">
+                    <li> 1кг рис
+                    </li>
+                    <li> 650гр мясо
+                    </li>
+                    <li>350гр морковь
+                   </li>
+                    <li>300гр лук
+                    </li>
+                    <li>250мл масло растительное
+                    </li>
+                     <li>зира,соль,чеснок,куркума и перец.
+                     </li>
+                     <li> 350мл вода</li>
+                    <a href="#" class="catalog-item__back">назад</a>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="catalog-item__footer">
+                <div class="catalog-item__prices">
+                    <div class="catalog-item__old-price">750 руб.</div>
+                    <div class="catalog-item__price">500 руб.</div>
+                </div>
+                <button class="button button_mini">КУПИТЬ</button>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+                <div class="catalog-item__content catalog-item__content_active">
+                    <img src="img/pasta.jpg" alt="salat" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Паста путтанеска</div>
+                    <div class="catalog-item__descr">Поверьте, вкус нашей пасты прямо <br> из Италии.</div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                </div>
+                <ul class="catalog-item__list">
+                    <li>Спагетти: 300г.
+                    </li>
+                    <li>Тунец консервированный: 200г.
+                    </li>
+                    <li>Томаты черри: 100г.
+                    </li>
+                    <li>Базилик свежий или петрушка: 1 пучок.
+                    </li>
+                    <li>Маслины (черные оливки): 100г.
+                    </li>
+                    <li>Перец чили: 1 маленькая штука
+                    </li>
+                    <li>Чеснок: 3 зубчика.  
+                    </li>
+                    <a href="#" class="catalog-item__back">назад</a>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="catalog-item__footer">
+                <div class="catalog-item__prices">
+                    <div class="catalog-item__old-price">490 руб.</div>
+                    <div class="catalog-item__price">341 руб.</div>
+                </div>
+                <button class="button button_mini">КУПИТЬ</button>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+                <div class="catalog-item__content catalog-item__content_active">
+                    <img src="img/beshbarmak.jpeg" alt="salat" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Бешбармак</div>
+                    <div class="catalog-item__descr">Свежий бешбармак из мяса конины откроет новый мир вашего желудка
+                    </div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                </div>
+                <ul class="catalog-item__list">
+                    <li> 500гр конины
+                    </li>
+                    <li> 1л бульона
+                    </li>
+                    <li> 350гр тесто
+                   </li>
+                    <li>250гр лук
+                    </li>
+                    <li> 300гр казы
+                    </li>
+                    <li> соль, перец по вкусу
+                    </li>
+                    <a href="#" class="catalog-item__back">назад</a>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="catalog-item__footer">
+                <div class="catalog-item__prices">
+                    <div class="catalog-item__old-price">750 руб.</div>
+                    <div class="catalog-item__price">500 руб.</div>
+                </div>
+                <button class="button button_mini">КУПИТЬ</button>
+            </div>
+        </div>
+        <div class="catalog-item">
+            <div class="catalog-item__wrapper">
+                <div class="catalog-item__content catalog-item__content_active">
+                    <img src="img/borsch.jpg" alt="salat" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Борщ</div>
+                    <div class="catalog-item__descr">Традиционный Борщ. Вкусно как у бабушки
+                    </div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                </div>
+                <ul class="catalog-item__list">
+                    <li>80гр свёкла
+                    </li>
+                    <li>200гр картофель
+                    </li>
+                    <li>лук, чеснок и морковь по две штуки
+                   </li>
+                    <li>500гр говядина
+                    </li>
+                    <li>петрушка,укроп,белокочанная капуста
+                    </li>
+                     <li>соль,сахар и подсолнечное масло
+                     </li>
+                    <a href="#" class="catalog-item__back">назад</a>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="catalog-item__footer">
+                <div class="catalog-item__prices">
+                    <div class="catalog-item__old-price">390 руб.</div>
+                    <div class="catalog-item__price">321 руб.</div>
+                </div>
+                <button class="button button_mini">КУПИТЬ</button>
+            </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    
+    <section class="feed wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+        <div class="container">
+            <h2 class="title">отзывы клиентов</h2>
+            <div class="feed__item ">
+                <img src="img/feed_1.jpg" alt="Robert" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subtitle">Роберт Уиттакер</div>
+                    <div class="feed__count">Постоянный клиент</div>
+                    <div class="feed__descr">Я отношусь к еде очень деликатно. Мне важна чистота и качество продукта. В нашем городе таких ресторанов очень мало. 
+                        Но, когда я познакомился с Тэсти я начал сюда ходить очень часто.
+                    <br><br>
+                    Приходите, не пожалеете!
+                    </div>
+                </div>
+            </div>
+            <div class="feed__item">
+                <img src="img/feed_2.jpg" alt="Samat" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subtitle">Самат Шиноус</div>
+                    <div class="feed__count">Постоянный клиент</div>
+                    <div class="feed__descr"> Всегда свой день рождения провожу в этом ресторане как и другие банкеты. Я к ним уже год хожу. Вот сейчас только появилась возможность заказать доставку. 
+                    <br><br> 
+                    Скоро собираюсь ещё провести здесь день рождения! Успехов вам Тэсти!
+                    </div>
+                </div>
+            </div>
+            <div class="feed__item">
+                <img src="img/feed_3.jpg" alt="Basmir" class="feed__img">
+                <div class="feed__text">
+                    <div class="feed__subtitle">Басмир Бэт</div>
+                    <div class="feed__count">Новый клиент</div>
+                    <div class="feed__descr">Недавно был здесь с друзьями. Было очень весело и вкусно. Обслуживание отлично. Вчера впервые заказал себе доставку, к удивлению очень быстро привезли. Конечно выбора пока мало, но покушать можно.
+                    <br><br> 
+                    Спасибо!!!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__map"> </div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A64b47b0417e9f01e9ce5ba14b4671089f0783f9bd0634e57a56cb9074f506e4b&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="footer__info"></div>       
+    </footer>
+    
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму завки</div>
+            <div class="modal__descr">Мы перезвоним в течении десяти минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text"> 
+                <input name="phone" placeholder="Ваш телефон"> 
+                <input name="email" placeholder="Ваш E-mail" type="email"> 
+
+                <button class="button button_submit">Отправить</button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr">Блюдо манты</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="phone" required placeholder="Ваш телефон" > 
+                <input name="email" required placeholder="Ваш E-mail" type="email"> 
+
+                <button class="button button_submit">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за ваш заказ!</div>
+            <div class="modal__descr">Ждите звонка менеджера</div>
+        </div>
+
+    </div>
+    
+    <a href="#up"  class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+</body>
+</html>
